@@ -1,0 +1,20 @@
+name: Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Create Release Notes
+        run: |
+          echo "## 🎉 Nova Versão Lançada!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Desenvolvido por: **Aureo Manzano Junior**" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 Website: [iadev.pro](https://iadev.pro)" >> $GITHUB_STEP_SUMMARY
+          echo "- 📧 Email: [aureomanzano@icloud.com](mailto:aureomanzano@icloud.com)" >> $GITHUB_STEP_SUMMARY
+
