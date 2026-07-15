@@ -3,7 +3,7 @@ Pydantic schemas for request/response models
 """
 
 from pydantic import BaseModel, HttpUrl, Field
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 from datetime import datetime
 
 
@@ -75,7 +75,7 @@ class Performance(BaseModel):
 class Keywords(BaseModel):
     """Keywords analysis"""
     density: Dict[str, float] = {}
-    top_keywords: List[Dict[str, any]] = []
+    top_keywords: List[Dict[str, Any]] = []
 
 
 class ScanResponse(BaseModel):

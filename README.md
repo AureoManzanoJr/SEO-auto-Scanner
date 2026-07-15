@@ -1,5 +1,6 @@
 # SEO Auto Scanner
 
+[![Python Tests](https://github.com/AureoManzanoJr/SEO-auto-Scanner/actions/workflows/python-tests.yml/badge.svg)](https://github.com/AureoManzanoJr/SEO-auto-Scanner/actions/workflows/python-tests.yml)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -67,5 +68,3 @@ cd backend && python -m pytest
 ## License
 
 MIT © Aureo Manzano Junior
-
-<!-- Replace AureoManzanoJr with your GitHub handle after moving/publishing. -->
